@@ -484,6 +484,7 @@ flex-direction: column;
 }
 
 /* Apply animation to the h2 tag when it enters the viewport */
+<<<<<<< HEAD
 
 
 .fadeup {
@@ -512,3 +513,5 @@ flex-direction: column;
     opacity: 1; /* Show the sports content */
     transform: translateY(0); /* Move the sports content to its original position */
 }
+=======
+>>>>>>> parent of a6e4bb8 (animation added for all)
