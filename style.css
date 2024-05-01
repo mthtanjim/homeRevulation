@@ -421,3 +421,27 @@ flex-direction: column;
 }
 
 /* Apply animation to the h2 tag when it enters the viewport */
+
+
+.calBox {
+    opacity: 0; /* Initially hide the form */
+    transform: translateY(45px); /* Move the form 30px below */
+    transition: opacity 0.7s ease, transform 0.8s ease; /* Add transition effect */
+}
+
+.calBox.show {
+    opacity: 1; /* Show the form */
+    transform: translateY(0); /* Move the form to its original position */
+}
+
+
+.grid-item {
+    opacity: 0; /* Initially hide the sports content */
+    transform: translateY(45px); /* Move the sports content 30px below */
+    transition: opacity 0.7s ease, transform 0.8s ease; /* Add transition effect */
+}
+
+.grid-item.show {
+    opacity: 1; /* Show the sports content */
+    transform: translateY(0); /* Move the sports content to its original position */
+}

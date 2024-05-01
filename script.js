@@ -99,4 +99,62 @@ const observer = new IntersectionObserver(callback, options);
 // Start observing the target element
 observer.observe(animatedText);
 
+
+// start for form 
+
+// Target the element to animate
+const calBox = document.querySelector('.calBox');
+
+// Options for the Intersection Observer
+const optionss = {
+    threshold: 0.5 // Trigger the animation when 50% of the element is visible
+};
+
+// Callback function for the Intersection Observer
+const callbacks = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the class to show the form with animation
+            calBox.classList.add('show');
+            // Unobserve the target element after animation has been triggered
+            observer.unobserve(entry.target);
+        }
+    });
+};
+
+// Create the Intersection Observer
+const observers = new IntersectionObserver(callbacks, optionss);
+
+// Start observing the target element
+observers.observe(calBox);
+
+
+// for sports container 
+
+// Target all elements with the class name 'grid-item'
+const sportsContainers = document.querySelectorAll('.grid-item');
+
+// Options for the Intersection Observer
+const optionsForS = {
+    threshold: 0.5 // Trigger the animation when 50% of the element is visible
+};
+
+// Callback function for the Intersection Observer
+const callbackForS = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the class to show the sports content with animation
+            entry.target.classList.add('show');
+            // Unobserve the target element after animation has been triggered
+            observer.unobserve(entry.target);
+        }
+    });
+};
+
+// Create a separate Intersection Observer for each sports container
+sportsContainers.forEach(container => {
+    const observerForS = new IntersectionObserver(callbackForS, optionsForS);
+    observerForS.observe(container);
+});
+
   
