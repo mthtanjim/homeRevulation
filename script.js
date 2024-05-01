@@ -60,8 +60,6 @@ function getAllStyles(element) {
     }
   }
 
-
-
   document.getElementById('inquiry-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -158,3 +156,35 @@ sportsContainers.forEach(container => {
 });
 
   
+
+
+const serviceCosts = {
+    kitchen: 150,  // $150 per sqft
+    bathroom: 120, // $120 per sqft
+    flooring: 30,  // $30 per sqft
+    painting: 15,  // $15 per sqft
+    roof: 50       // $50 per sqft
+};
+
+
+const serviceSelect = document.getElementById('service-select');
+const areaInput = document.getElementById('area');
+const consultationCheckbox = document.getElementById('consultation');
+const calculateButton = document.getElementById('calculate-button');
+const costResult = document.getElementById('cost-result');
+
+calculateButton.addEventListener('click', () => {
+    const selectedService = serviceSelect.value;
+    const area = parseFloat(areaInput.value);
+    const consultationFee = consultationCheckbox.checked ? 100 : 0;
+
+    if (isNaN(area) || area <= 0) {
+        alert("Please enter a valid area (greater than 0).");
+        return;
+    }
+
+    const baseCost = serviceCosts[selectedService] * area;
+    const totalCost = baseCost + consultationFee;
+
+    costResult.textContent = `Estimated Renovation Cost: $${totalCost.toFixed(2)}`;
+});

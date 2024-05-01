@@ -7,153 +7,157 @@
 <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Community Sports League</title>
+    <title>Home Renovation Firm</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="logo-container">
-            <a href="/sportsLeague">
-            <img src="logo.png" alt="">
+            <a href="/">
+                <span>HRF</span>
         </a>
         </div>
         <ul>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#sports">Sports Offered</a></li>
+            <li><a href="#sports">Services</a></li>
             <li><a href="#registration">Calculator</a></li>
-            <li><a href="#contacts">Contact</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
     <main>
         <section class="hero">
             <img src="banner.jpg" alt="Sports Image">
             <div class="hero-content">
-                <h2 class="animated-text" >Building a Stronger Community Through Sports</h2>
+                <h2 class="animated-text" >Transforming Homes, Creating Dreams</h2>
             </div>
         </section>
+        
         <section id="about" class="banner">
-            <h2 class="animated-text">Building a Healthy Community Through Sports</h2>
+            <h2 class="animated-tex">Crafting Homes with Care. Your Trusted Renovation Partner</h2>
             <div class="banner-body">
-                <p class="grid-item" >The Community Sports League is a non-profit organization dedicated to providing affordable athletic programs for all ages and skill levels. We believe that sportsmanship, teamwork, and physical activity are essential components of a healthy and happy life.</p>
+                <p class="grid-item" >Crafting Homes with Care, we specialize in turning your vision into reality. With meticulous attention to detail and years of expertise, we are your trusted renovation partner dedicated to enhancing the beauty and functionality of your space.</p>
                 <img class="bnrImg" src="sportss.jpg" alt="">
             </div>
         </section>
         
         <section id="sports" class="grid-container">
-            <h2>Sports Offered</h2>
+            <h2>Our Services</h2>
             <div class="sports-container" >
               <div class="grid-item">
                 <div class="imgBox"    >
-            <img src="public/soccer.webp" alt="Soccer Ball">
+            <img src="public/consul.jpg" alt="Soccer Ball">
             </div>
-                <h4 class="animatedTitle" >Soccer</h4>
-                <p>The world's favorite sport - come join a team!</p> 
+                <h4 class="animatedTitle" >Home Revulation Consultation</h4>
+                <p>Make your dream home with our expert's consultation</p> 
               </div>
               <div class="grid-item">
                 <div class="imgBox"    >
-                <img src="public/basketball.webp" alt="Basketball">
+            <img src="public/kithen.webp" alt="Soccer Ball">
             </div>
-                <h4>Basketball</h4>
-                <p>Fast action and teamwork - sign up today!</p> 
+                <h4 class="animatedTitle" >Kitchen Renovation</h4>
+                <p>Transform your kitchen with our comprehensive renovation services</p> 
               </div>
               <div class="grid-item">
                 <div class="imgBox"    >
-                <img src="public/volleyball.webp" alt="Sport 3">
+                <img src="public/batroom.jpeg" alt="Basketball">
             </div>
-                <h4>Volleyball</h4>
-                <p>Spike, set, and socialize - all skill levels welcome!</p> 
+                <h4>Bathroom Renovation</h4>
+                <p>Elevate your bathroom with our expert renovation solutions.</p> 
               </div>
               <div class="grid-item">
                 <div class="imgBox"    >
-                <img src="public/softBall.jpg" alt="Sport 4">
+                <img src="public/floor.jpg" alt="Sport 3">
             </div>
-                <h4>Softball</h4>
-                <p>Fun in the sun - leagues for everyone!</p> 
+                <h4>Flooring Installation</h4>
+                <p>Upgrade your home's flooring with our professional installation services</p> 
               </div>
               <div class="grid-item">
                 <div class="imgBox"    >
-                <img src="public/tennis.webp" alt="Sport 5">
+                <img src="public/interior.avif" alt="Sport 4">
             </div>
-                <h4>Tennis</h4>
-                <p>Get competitive or just have fun – grab a racket!</p>
+                <h4>Interior Painting</h4>
+                <p>Add a fresh coat of paint to your home's interior with our expert painting services.</p> 
               </div>
               <div class="grid-item">
                 <div class="imgBox"    >
-                <img src="public/golf.jpg" alt="Sport 5">
+                <img src="public/roop.webp" alt="Sport 5">
             </div>
-                <h4>Golf</h4>
-                <p>Relaxing yet challenging – perfect your swing here. </p> 
+                <h4>Roof Repair</h4>
+                <p>Protect your home from the elements with our professional roof repair services.</p>
               </div>
             </div>
           </section>
 
-          <section id="registration" class="registration">
-            <h2>Calculate the Registration Fee</h2>
+          <section id="registrationa" class="registrationa">
             <div class="calBox">
-                <select id="sport" class="dropdown">
-                    <option value="soccer">Soccer</option>
-                    <option value="basketball">Basketball</option>
-                    <option value="softball">Softball</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="volleyball">Volleyball</option>
-                </select>
-                <select id="age-group" class="dropdown">
-                    <option value="under10">Under 10 years</option>
-                    <option value="10-15">10-15 years</option>
-                    <option value="15-20">15-20 years</option>
-                    <option value="20+">20+ years</option>
-                </select>
                 <button id="calc-button">Calculate Fee</button>
                 <p id="fee-result"></p>
             </div>
         </section>
+
+          <section id="calculator" class="calculator">
+            <h2>Renovation Cost Calculator</h2>
+            <div class="calculator-form">
+                <label for="service-select">Select Service:</label>
+                <select id="service-select">
+                    <option value="kitchen">Kitchen Renovation</option>
+                    <option value="bathroom">Bathroom Renovation</option>
+                    <option value="flooring">Flooring Installation</option>
+                    <option value="painting">Interior Painting</option>
+                    <option value="roof">Roof Repair</option>
+                </select>
+                <label for="area">Area to Renovate (in sqft):</label>
+                <input type="number" id="area" min="1"> 
+                <label>
+                    <input type="checkbox" id="consultation"> Include Consultation ($100)
+                </label>
+                <button id="calculate-button">Calculate Cost</button>
+            </div>
+            <div id="cost-result" class="cost-result"></div>
+        </section>
     
         <section id="contact" class="contact-form">
-            <h2>Join Our League</h2>
+            <h2>Schedule for consultation</h2>
             <form id="inquiry-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" required>
-                <label for="phone">Phone Number (Optional):</label>
+                <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone">
-                <label for="inquiry">Inquiry:</label>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" required>
+                <label for="inquiry">Additional Message (optional):</label>
                 <textarea id="inquiry" rows="5"></textarea>
-                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="submit" id="submit-button">Schedule Consultation</button>
                     <p id="success-message" style="display: none;">Your message has been successfully submitted!</p>
             </form>
         </section>
 
-
         <section id="contacts" class="contact-page">
-            <div class="container">
+            <div class="contactContainer">
                 <h2>Contact Us</h2>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Street Name, City, State</p> 
+                        <p>056 Street, City, State Name</p> 
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <p>(555) 555-1212</p>
+                        <p>(555) 555-1222</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>info@communitysports.org</p>
+                        <p>info@homerevulation.org</p>
                     </div>
                 </div>
-         
-              
             </div>
         </section>
         
     </main>
-
     <footer>
-        <p>&copy; Community Sports League. All Rights Reserved.</p>
+        <p>&copy; Home Renovation Firm. All Rights Reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

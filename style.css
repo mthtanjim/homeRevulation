@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background-color: #383838;
+    background-color: #ffffff;
     padding: 7px 0;
     display: flex; /* Allow logo and navigation to sit side-by-side */
     align-items: center; /* Vertically center the logo and links */
@@ -29,19 +29,20 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(236, 236, 236);
+    color: rgb(56, 56, 56);
     font-size: clamp(1rem, 0.693vw + 0.821rem, 1.375rem);
 }
 
 .logo-container {
     border-radius: 10%;
     font-size: clamp(1.125rem, 1.386vw + 0.766rem, 1.875rem);
-    margin-left: 20px; 
-    color: rgb(255, 255, 255);
+    margin: 10px; 
+    color: rgb(63, 63, 63);
     
 }
-.logo-container img { 
-    height: 80px;
+.logo-container span { 
+    margin: 20px 10px;
+    font-size: clamp(1.563rem, 2.257vw + 0.978rem, 2.813rem);
 }
 
 /* Responsive Tweak */
@@ -78,7 +79,7 @@ nav ul li a {
     background-position: center;
     text-align: center;
     /* color: rgb(255, 255, 255);  */
-    background-color: #b6b6ca;
+    background-color: #030326e1;
 }
 .hero img {
     height: 90vh;
@@ -94,10 +95,10 @@ nav ul li a {
 
 .hero-content h2 {
 color: rgb(245, 245, 245);
-background-color: rgba(24, 24, 24, 0.411);
+background-color: rgba(24, 24, 24, 0.237);
     font-size: 3em; /* Adjust font size as needed */
     /* margin-bottom: 15px; */
-    padding: 5px 10px;
+    padding: 10px 0px;
     border-radius: 5px;
 } 
 
@@ -106,7 +107,10 @@ background-color: rgba(24, 24, 24, 0.411);
 .banner {
     text-align: center;
     padding: clamp(0.625rem, 4.619vw + -0.57rem, 3.125rem) clamp(0.188rem, 1.963vw + -0.32rem, 1.25rem);
-    background-color: #e8f0fe;
+    background-color: #1b1108dd;
+}
+.banner h2 {
+    color: rgba(231, 229, 229, 0.826);
 }
 .banner .banner-body {
     display: flex;
@@ -116,7 +120,9 @@ background-color: rgba(24, 24, 24, 0.411);
 }
 
 .banner .banner-body p{
+    color: rgb(210, 210, 210);
     width: 45%;
+    background-color: none !important;
     font-size: clamp(1rem, 0.462vw + 0.88rem, 1.25rem);
  }
 
@@ -141,7 +147,6 @@ background-color: rgba(24, 24, 24, 0.411);
      }
 }
 
-
 /* ... other styles ... */
 
 .grid-container {
@@ -162,13 +167,15 @@ background-color: rgba(24, 24, 24, 0.411);
     padding: clamp(1.25rem, 2.309vw + 0.652rem, 2.5rem);
 }
 .grid-item {
-    border: 1px solid #ddd; 
+    color: rgb(224, 224, 224);
+    border: 1px solid #803a3a; 
     padding: clamp(0.438rem, 1.501vw + 0.049rem, 1.25rem); 
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px; 
-    background-color: rgba(128, 128, 128, 0.135);
-  
+    background-color: #ae5122d5;
+    /* background-color: rgba(155, 5, 72, 0.806); */
+
 }
 
 .grid-item .imgBox  {
@@ -220,20 +227,17 @@ background-color: rgba(24, 24, 24, 0.411);
 }
 
 .calBox p {
-    background-color: rgba(64, 227, 15, 0.374);
+    background-color: rgba(227, 15, 139, 0.374);
     padding: 20px 25px;
     border: 2px solid rgba(128, 128, 128, 0.187);
 }
 
-.dropdown option {
-   
-}
 
 #calc-button {
     font-size: 16px; /* Increase the font size */
     padding: 10px 20px; /* Add padding */
     margin: 10px 0; /* Add margin */
-    background-color: #3e871e; /* Change button color */
+    background-color: #ae5122d5; /* Change button color */
     color: #fff; /* Change text color */
     border: none;
     cursor: pointer;
@@ -242,7 +246,7 @@ background-color: rgba(24, 24, 24, 0.411);
 }
 
 #calc-button:hover {
-    background-color: #0056b3; /* Change button color on hover */
+    background-color: #e88857d5; /* Change button color on hover */
 }
 
 #fee-result {
@@ -266,14 +270,15 @@ form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: #26a21a;
+    background-color: #ae5122d5;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 footer {
-    background-color: #f0f0f0;
+    color: white;
+    background-color: #1b1108dd;
     text-align: center;
     padding: 15px;
 }
@@ -288,17 +293,14 @@ footer {
     }
 }
 
-/* contact page style  */
-
-/* ... other styles ... */
-
 /* Contact Page Styles */
 .contact-page {
+    color: white;
     display: flex;
     padding: 60px 20px; 
     align-items: center;
     justify-content: center;
-    background-color: #f8f9fa;
+    background-color: #011529;
 }
 
 .container {
@@ -309,31 +311,38 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.contactContainer {
+display: flex;
+flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
 
 .container h2 { 
     align-self: center;
-    
 }
 
 .contact-info {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 
 .contact-item {
+ 
     text-align: center;
-    margin-bottom: 20px;
-    width: 30%; /* Adjust for 2 or 3 columns */
+    
 }
 
 .contact-item i {
     font-size: 2em;
     color: #1fac26; /* Match your theme's color */
-    margin-bottom: 10px;
+    
 }
 .contact-form {
+    background-color: #ae51221a;
     padding: 1vw 6vw;
 }
 
@@ -359,12 +368,75 @@ flex-direction: column;
 } 
 
 #contact-form button[type="submit"] {
-    background-color: #00ff04;
+    background-color: #ae5122d5;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
 }
+
+.calculator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.calculator-form {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+@media (max-width: 600px) { 
+    .calculator-form {
+      width: 100%; 
+    }
+  }
+
+
+.calculator-form label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.calculator-form select {
+    width: 100%;
+    padding: 7px 5px;
+    margin: 10px 0px;
+    border: 2px solid rgba(128, 128, 128, 0.272);
+ }
+
+ .calculator-form button {
+    padding: 10px 15px;
+    margin: 15px 0px;
+    
+    color: white;
+    border: 2px solid rgba(128, 128, 128, 0.404);
+    background-color: #ae5122d5;
+ }
+
+.calculator-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.calculator-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.cost-result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 
 /* Responsive Tweaks */
 @media screen and (max-width: 768px) {
@@ -383,16 +455,7 @@ flex-direction: column;
 /* animation */
 
 /* Define the animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(23px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 
 /* Apply the animation to the h2 tag */
 .hero-content h2.animated-text {
@@ -407,7 +470,7 @@ flex-direction: column;
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(45px);
     }
     100% {
         opacity: 1;
@@ -423,17 +486,21 @@ flex-direction: column;
 /* Apply animation to the h2 tag when it enters the viewport */
 
 
-.calBox {
-    opacity: 0; /* Initially hide the form */
-    transform: translateY(45px); /* Move the form 30px below */
+.fadeup {
+    opacity: 0; /* Initially hide the sports content */
+    transform: translateY(45px); /* Move the sports content 30px below */
     transition: opacity 0.7s ease, transform 0.8s ease; /* Add transition effect */
 }
 
-.calBox.show {
-    opacity: 1; /* Show the form */
-    transform: translateY(0); /* Move the form to its original position */
+.fadeup.show {
+    opacity: 1; /* Show the sports content */
+    transform: translateY(0); /* Move the sports content to its original position */
 }
 
+.registrationa {
+    display: none;
+
+}
 
 .grid-item {
     opacity: 0; /* Initially hide the sports content */
